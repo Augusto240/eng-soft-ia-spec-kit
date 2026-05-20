@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Highlight",
+  "type": "object",
+  "required": ["id", "title", "summary", "region", "status", "date"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "summary": { "type": "string" },
+    "region": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["legalized", "decriminalized", "medical", "prohibited", "unknown"]
+    },
+    "date": { "type": "string" }
+  },
+  "additionalProperties": false
+}

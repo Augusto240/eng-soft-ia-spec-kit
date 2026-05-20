@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GlossaryTerm",
+  "type": "object",
+  "required": ["id", "term", "definition"],
+  "properties": {
+    "id": { "type": "string" },
+    "term": { "type": "string" },
+    "definition": { "type": "string" }
+  },
+  "additionalProperties": false
+}

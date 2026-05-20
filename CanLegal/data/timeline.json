@@ -1,0 +1,144 @@
+[
+  {
+    "id": "pt-2001",
+    "year": 2001,
+    "title": "Portugal decriminalizes possession",
+    "summary": "Administrative responses replace criminal penalties for possession.",
+    "status": "decriminalized",
+    "region": "Europe",
+    "countryCodes": ["PT"],
+    "sources": [{ "name": "INFARMED", "url": "https://www.infarmed.pt", "type": "government" }],
+    "verificationStatus": "needs-review"
+  },
+  {
+    "id": "uy-2013",
+    "year": 2013,
+    "title": "Uruguay legalizes adult use",
+    "summary": "National framework establishes regulated adult-use access.",
+    "status": "legalized",
+    "region": "South America",
+    "countryCodes": ["UY"],
+    "sources": [{ "name": "IRCCA", "url": "https://www.gub.uy/ircca", "type": "government" }],
+    "verificationStatus": "source-linked"
+  },
+  {
+    "id": "ca-2018",
+    "year": 2018,
+    "title": "Canada establishes federal legalization",
+    "summary": "Federal law enables regulated adult use alongside medical access.",
+    "status": "legalized",
+    "region": "North America",
+    "countryCodes": ["CA"],
+    "sources": [
+      {
+        "name": "Government of Canada - Cannabis",
+        "url": "https://www.canada.ca/en/services/health/campaigns/cannabis.html",
+        "type": "government"
+      }
+    ],
+    "verificationStatus": "source-linked"
+  },
+  {
+    "id": "mt-2021",
+    "year": 2021,
+    "title": "Malta creates adult-use framework",
+    "summary": "Legalization allows regulated access and home cultivation with limits.",
+    "status": "legalized",
+    "region": "Europe",
+    "countryCodes": ["MT"],
+    "sources": [{ "name": "Government of Malta", "url": "https://www.gov.mt", "type": "government" }],
+    "verificationStatus": "needs-review"
+  },
+  {
+    "id": "lu-2023",
+    "year": 2023,
+    "title": "Luxembourg allows limited adult possession",
+    "summary": "Policy reforms permit home cultivation with strict constraints.",
+    "status": "restricted",
+    "region": "Europe",
+    "countryCodes": ["LU"],
+    "sources": [
+      {
+        "name": "Government of Luxembourg",
+        "url": "https://gouvernement.lu",
+        "type": "government"
+      }
+    ],
+    "verificationStatus": "needs-review"
+  },
+  {
+    "id": "de-2024",
+    "year": 2024,
+    "title": "Germany expands adult-use access",
+    "summary": "Policy changes introduce regulated access pathways with strict controls.",
+    "status": "legalized",
+    "region": "Europe",
+    "countryCodes": ["DE"],
+    "sources": [
+      {
+        "name": "Federal Ministry of Health",
+        "url": "https://www.bundesgesundheitsministerium.de",
+        "type": "government"
+      }
+    ],
+    "verificationStatus": "needs-review"
+  },
+  {
+    "id": "au-medical",
+    "year": 2016,
+    "title": "Australia establishes medical access",
+    "summary": "National framework enables regulated medical cannabis access.",
+    "status": "medical_only",
+    "region": "Oceania",
+    "countryCodes": ["AU"],
+    "sources": [
+      {
+        "name": "Therapeutic Goods Administration",
+        "url": "https://www.tga.gov.au/medicinal-cannabis",
+        "type": "government"
+      }
+    ],
+    "verificationStatus": "needs-review"
+  },
+  {
+    "id": "br-medical",
+    "year": 2019,
+    "title": "Brazil expands medical access",
+    "summary": "Regulatory updates expand medical access under national oversight.",
+    "status": "medical_only",
+    "region": "South America",
+    "countryCodes": ["BR"],
+    "sources": [{ "name": "ANVISA", "url": "https://www.gov.br/anvisa", "type": "government" }],
+    "verificationStatus": "needs-review"
+  },
+  {
+    "id": "gb-medical",
+    "year": 2018,
+    "title": "United Kingdom opens medical access",
+    "summary": "Specialist prescribing pathways enable limited medical access.",
+    "status": "medical_only",
+    "region": "Europe",
+    "countryCodes": ["GB"],
+    "sources": [
+      {
+        "name": "GOV.UK - Medicinal cannabis guidance",
+        "url": "https://www.gov.uk/government/collections/medicinal-cannabis-information-and-guidance",
+        "type": "government"
+      }
+    ],
+    "verificationStatus": "needs-review"
+  },
+  {
+    "id": "za-2018",
+    "year": 2018,
+    "title": "South Africa decriminalizes private use",
+    "summary": "Court decisions open the path for private use decriminalization.",
+    "status": "decriminalized",
+    "region": "Africa",
+    "countryCodes": ["ZA"],
+    "sources": [
+      { "name": "South African Department of Health", "url": "https://www.health.gov.za", "type": "government" }
+    ],
+    "verificationStatus": "needs-review"
+  }
+]

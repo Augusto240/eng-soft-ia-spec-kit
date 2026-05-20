@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PolicyStatus",
+  "type": "object",
+  "required": ["status", "label", "definition"],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["legalized", "decriminalized", "medical", "prohibited"]
+    },
+    "label": { "type": "string" },
+    "definition": { "type": "string" }
+  },
+  "additionalProperties": false
+}

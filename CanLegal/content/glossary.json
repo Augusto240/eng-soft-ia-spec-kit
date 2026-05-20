@@ -1,0 +1,47 @@
+[
+  {
+    "id": "term-legalization",
+    "term": "Legalization",
+    "definition": "Adult use is legal under national policy with regulated access and supply."
+  },
+  {
+    "id": "term-decriminalization",
+    "term": "Decriminalization",
+    "definition": "Possession is not a criminal offense; penalties may be administrative."
+  },
+  {
+    "id": "term-medical",
+    "term": "Medical cannabis",
+    "definition": "Access is permitted through prescription and regulated medical programs."
+  },
+  {
+    "id": "term-recreational",
+    "term": "Recreational use",
+    "definition": "Non-medical adult use within a regulated legal framework."
+  },
+  {
+    "id": "term-possession",
+    "term": "Possession limits",
+    "definition": "Legal thresholds for how much a person may hold, often jurisdiction-specific."
+  },
+  {
+    "id": "term-cultivation",
+    "term": "Cultivation",
+    "definition": "Rules governing home growing or licensed cultivation."
+  },
+  {
+    "id": "term-industrial",
+    "term": "Industrial hemp",
+    "definition": "Cultivation for fiber, seed, and low-THC products regulated separately."
+  },
+  {
+    "id": "term-cbd",
+    "term": "CBD",
+    "definition": "Cannabidiol, a non-intoxicating cannabinoid used in medical and wellness products."
+  },
+  {
+    "id": "term-thc",
+    "term": "THC",
+    "definition": "Tetrahydrocannabinol, the primary intoxicating cannabinoid subject to regulation."
+  }
+]

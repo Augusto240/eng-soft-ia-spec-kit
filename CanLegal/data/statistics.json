@@ -1,0 +1,37 @@
+[
+  {
+    "id": "stat-legalized",
+    "label": "Legalized frameworks",
+    "value": 4,
+    "unit": "countries",
+    "description": "Countries with national adult-use legalization in this dataset."
+  },
+  {
+    "id": "stat-medical",
+    "label": "Medical access",
+    "value": 12,
+    "unit": "countries",
+    "description": "Countries with regulated medical access in this dataset."
+  },
+  {
+    "id": "stat-decrim",
+    "label": "Decriminalization",
+    "value": 4,
+    "unit": "countries",
+    "description": "Countries where possession is decriminalized."
+  },
+  {
+    "id": "stat-recreational",
+    "label": "Recreational access",
+    "value": 5,
+    "unit": "countries",
+    "description": "Countries with adult-use access in this dataset."
+  },
+  {
+    "id": "stat-sources",
+    "label": "Official sources",
+    "value": 13,
+    "unit": "records",
+    "description": "Country records linked to official sources for verification."
+  }
+]

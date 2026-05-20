@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Country",
+  "type": "object",
+  "required": ["code", "name", "continent", "status", "categories", "updatedAt", "sources"],
+  "properties": {
+    "code": { "type": "string", "minLength": 2 },
+    "name": { "type": "string" },
+    "continent": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["legalized", "decriminalized", "medical", "prohibited", "unknown"]
+    },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "updatedAt": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "url"],
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "lat": { "type": "number" },
+    "lon": { "type": "number" },
+    "dataStatus": { "type": "string", "enum": ["sample", "verified"] }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "title": "Global cannabis policy, clearly mapped",
+    "subtitle": "Evidence-first coverage of legalization, medical access, and public policy status across countries and regions.",
+    "disclaimer": "Educational only. All data must be verified against official sources before publication.",
+    "primaryCta": {
+      "label": "Explore legal status",
+      "href": "#overview"
+    },
+    "secondaryCta": {
+      "label": "Learn key terms",
+      "href": "#education"
+    },
+    "stats": [
+      { "label": "Countries tracked", "value": "13" },
+      { "label": "Policy categories", "value": "5" },
+      { "label": "Source-linked records", "value": "13" }
+    ]
+  },
+  "overview": {
+    "title": "Legal status overview",
+    "subtitle": "Filter by policy category, continent, and medical or recreational access."
+  },
+  "highlights": {
+    "title": "Recent policy highlights",
+    "subtitle": "Watch for regulatory changes and notable updates."
+  },
+  "statistics": {
+    "title": "Policy landscape metrics",
+    "subtitle": "Key indicators built from the structured policy dataset."
+  },
+  "timeline": {
+    "title": "Historical legalization timeline",
+    "subtitle": "Major milestones in policy evolution."
+  },
+  "education": {
+    "title": "Understand legal terminology",
+    "subtitle": "Clear definitions to avoid ambiguity when comparing countries."
+  },
+  "sources": {
+    "title": "Sources and references",
+    "subtitle": "Every record must link to official sources for verification and transparency."
+  },
+  "faq": [
+    {
+      "question": "Is this platform advocating for cannabis?",
+      "answer": "No. This platform is educational and focuses on legislation, public policy, and regulatory context."
+    },
+    {
+      "question": "Where does the data come from?",
+      "answer": "Each record links to official sources. Verify and update before public publication."
+    },
+    {
+      "question": "How often is data updated?",
+      "answer": "Updates depend on your pipeline; each country record includes a last updated field."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "status": "legalized",
+    "label": "Legalized",
+    "definition": "Adult use is legal under national policy, with regulated supply and access."
+  },
+  {
+    "status": "medical_only",
+    "label": "Medical only",
+    "definition": "Medical access is legal under prescription or regulated programs."
+  },
+  {
+    "status": "decriminalized",
+    "label": "Decriminalized",
+    "definition": "Possession is not a criminal offense, but sale may still be illegal."
+  },
+  {
+    "status": "illegal",
+    "label": "Illegal",
+    "definition": "Possession and use remain illegal under national policy."
+  },
+  {
+    "status": "restricted",
+    "label": "Restricted / experimental",
+    "definition": "Limited pilots or partial legalization with significant restrictions."
+  }
+]

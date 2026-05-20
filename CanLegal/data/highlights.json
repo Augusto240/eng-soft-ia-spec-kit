@@ -1,0 +1,39 @@
+[
+  {
+    "id": "highlight-1",
+    "title": "Regulatory modernization programs",
+    "summary": "Multiple regions are updating medical access frameworks and oversight rules.",
+    "region": "Global",
+    "status": "medical_only",
+    "date": "2026-03-01",
+    "sources": [
+      { "name": "World Health Organization", "url": "https://www.who.int", "type": "international" }
+    ]
+  },
+  {
+    "id": "highlight-2",
+    "title": "Data transparency initiatives",
+    "summary": "Public agencies are publishing clearer guidance on policy categories.",
+    "region": "Europe",
+    "status": "decriminalized",
+    "date": "2026-02-10",
+    "sources": [
+      { "name": "EMCDDA", "url": "https://www.emcdda.europa.eu", "type": "international" }
+    ]
+  },
+  {
+    "id": "highlight-3",
+    "title": "Compliance and oversight updates",
+    "summary": "Regulators clarify supply rules and public health safeguards.",
+    "region": "North America",
+    "status": "legalized",
+    "date": "2026-01-22",
+    "sources": [
+      {
+        "name": "Government of Canada - Cannabis",
+        "url": "https://www.canada.ca/en/services/health/campaigns/cannabis.html",
+        "type": "government"
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "EMCDDA",
+    "url": "https://www.emcdda.europa.eu",
+    "type": "international"
+  },
+  {
+    "name": "World Health Organization",
+    "url": "https://www.who.int",
+    "type": "international"
+  },
+  {
+    "name": "UNODC",
+    "url": "https://www.unodc.org",
+    "type": "international"
+  },
+  {
+    "name": "Government of Canada - Cannabis",
+    "url": "https://www.canada.ca/en/services/health/campaigns/cannabis.html",
+    "type": "government"
+  },
+  {
+    "name": "IRCCA",
+    "url": "https://www.gub.uy/ircca",
+    "type": "government"
+  },
+  {
+    "name": "Federal Ministry of Health (Germany)",
+    "url": "https://www.bundesgesundheitsministerium.de",
+    "type": "government"
+  }
+]
