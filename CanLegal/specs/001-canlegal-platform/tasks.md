@@ -71,7 +71,7 @@
 
 **Goal**: Visitors can open a country card and read detailed legal info and sources
 
-**Independent Test**: Selecting a country shows details with status, categories, and sources
+**Independent Test**: Selecting a country shows details with status, key facts, and sources
 
 ### Tests for User Story 2
 

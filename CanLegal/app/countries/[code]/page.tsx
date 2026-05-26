@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+import ConfidenceBadge from '@/components/ui/ConfidenceBadge';
 import FlagBadge from '@/components/ui/FlagBadge';
 import StatusBadge from '@/components/ui/StatusBadge';
 import { getCountries, getTimeline } from '@/lib/data/loaders';
@@ -27,7 +28,7 @@ export function generateMetadata({ params }: { params: { code: string } }) {
 
   return buildMetadata({
     title: `${country.name} policy overview`,
-    description: `Educational overview of ${country.name} cannabis policy status and categories.`,
+    description: `Educational overview of ${country.name} cannabis policy status and summary.`,
     path: `/countries/${country.code.toLowerCase()}`,
   });
 }
@@ -58,6 +59,7 @@ export default function CountryPage({ params }: { params: { code: string } }) {
           </div>
           <StatusBadge status={country.status} />
         </div>
+        <p className="mt-2 text-xs uppercase tracking-[0.2em] text-muted">{country.policyModel}</p>
         <p className="mt-4 text-sm text-muted">{country.summary}</p>
         <div className="mt-6 flex flex-wrap gap-2">
           <FlagBadge label="Medical" enabled={country.medical} />
@@ -65,6 +67,9 @@ export default function CountryPage({ params }: { params: { code: string } }) {
           <FlagBadge label="Decrim" enabled={country.decriminalized} />
           <FlagBadge label="Cultivation" enabled={country.cultivationAllowed} />
           <FlagBadge label="Hemp" enabled={country.industrialHemp} />
+        </div>
+        <div className="mt-4">
+          <ConfidenceBadge label={country.confidenceLabel} />
         </div>
       </section>
 
@@ -91,15 +96,57 @@ export default function CountryPage({ params }: { params: { code: string } }) {
               <dt className="text-xs uppercase tracking-[0.2em] text-muted">Last updated</dt>
               <dd className="text-ink">{country.lastUpdated}</dd>
             </div>
+            <div>
+              <dt className="text-xs uppercase tracking-[0.2em] text-muted">Verification</dt>
+              <dd className="text-ink">{country.verificationStatus}</dd>
+            </div>
           </dl>
         </div>
         <div className="rounded-2xl border border-line/40 bg-surface/70 p-6">
-          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">Policy notes</h2>
+          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">Access rules</h2>
+          <p className="mt-4 text-sm text-muted">Medical access: {country.medicalAccess}</p>
+          <p className="mt-3 text-sm text-muted">Possession: {country.possessionRule}</p>
+          <p className="mt-3 text-sm text-muted">Cultivation: {country.cultivationRule}</p>
+          <p className="mt-3 text-sm text-muted">Tourism: {country.tourismPolicy}</p>
+          <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.2em] text-muted">Policy notes</h3>
           <ul className="mt-4 grid gap-2 text-sm text-muted">
             {country.policyNotes.length === 0 ? (
               <li>No notes available.</li>
             ) : (
               country.policyNotes.map((note) => <li key={note}>{note}</li>)
+            )}
+          </ul>
+          <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.2em] text-muted">
+            Medical notes
+          </h3>
+          <ul className="mt-3 grid gap-2 text-sm text-muted">
+            {country.medicalNotes.length === 0 ? (
+              <li>No medical notes listed.</li>
+            ) : (
+              country.medicalNotes.map((note) => <li key={note}>{note}</li>)
+            )}
+          </ul>
+        </div>
+      </section>
+
+      <section className="grid gap-6 md:grid-cols-2">
+        <div className="rounded-2xl border border-line/40 bg-surface/70 p-6">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">Cultural context</h2>
+          <ul className="mt-4 grid gap-2 text-sm text-muted">
+            {country.culturalNotes.length === 0 ? (
+              <li>No cultural context listed.</li>
+            ) : (
+              country.culturalNotes.map((item) => <li key={item}>{item}</li>)
+            )}
+          </ul>
+        </div>
+        <div className="rounded-2xl border border-line/40 bg-surface/70 p-6">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">Tourism notes</h2>
+          <ul className="mt-4 grid gap-2 text-sm text-muted">
+            {country.tourismNotes.length === 0 ? (
+              <li>No tourism notes listed.</li>
+            ) : (
+              country.tourismNotes.map((item) => <li key={item}>{item}</li>)
             )}
           </ul>
         </div>
@@ -131,6 +178,22 @@ export default function CountryPage({ params }: { params: { code: string } }) {
             ))
           )}
         </ul>
+      </section>
+
+      <section className="rounded-2xl border border-line/40 bg-surface/70 p-6">
+        <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">FAQs</h2>
+        <div className="mt-4 grid gap-3 text-sm text-muted">
+          {country.countryFaq.length === 0 ? (
+            <p>No country-specific FAQs yet.</p>
+          ) : (
+            country.countryFaq.map((item) => (
+              <div key={item.question} className="rounded-xl border border-line/40 bg-surface/80 p-4">
+                <p className="text-sm font-semibold text-ink">{item.question}</p>
+                <p className="mt-2 text-sm text-muted">{item.answer}</p>
+              </div>
+            ))
+          )}
+        </div>
       </section>
 
       <section className="rounded-2xl border border-line/40 bg-surface/70 p-6">

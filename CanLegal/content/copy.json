@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Global cannabis policy, clearly mapped",
-    "subtitle": "Evidence-first coverage of legalization, medical access, and public policy status across countries and regions.",
+    "title": "Understanding cannabis policy around the world",
+    "subtitle": "Evidence-first coverage of legalization, medical access, harm reduction, and regulation across countries and regions.",
     "disclaimer": "Educational only. All data must be verified against official sources before publication.",
     "primaryCta": {
       "label": "Explore legal status",
@@ -12,14 +12,24 @@
       "href": "#education"
     },
     "stats": [
-      { "label": "Countries tracked", "value": "13" },
-      { "label": "Policy categories", "value": "5" },
-      { "label": "Source-linked records", "value": "13" }
+      { "label": "Countries tracked", "value": 15 },
+      { "label": "Policy categories", "value": 5 },
+      { "label": "Source-linked records", "value": 15 }
+    ],
+    "trust": [
+      "Official sources only",
+      "Policy-focused, non-advocacy",
+      "Accessible and verified"
     ]
   },
   "overview": {
     "title": "Legal status overview",
-    "subtitle": "Filter by policy category, continent, and medical or recreational access."
+    "subtitle": "Filter by policy category, continent, and access type."
+  },
+  "featured": {
+    "title": "Featured country profiles",
+    "subtitle": "High-impact policy models and recent reforms.",
+    "codes": ["CA", "NL", "DE", "UY", "PT", "BR", "TH", "MT"]
   },
   "highlights": {
     "title": "Recent policy highlights",
@@ -33,9 +43,56 @@
     "title": "Historical legalization timeline",
     "subtitle": "Major milestones in policy evolution."
   },
+  "medicalEducation": {
+    "title": "Medical cannabis education",
+    "subtitle": "Clinical access pathways and regulatory context.",
+    "items": [
+      {
+        "title": "Medical authorization",
+        "summary": "Medical access typically requires prescription and clinical oversight.",
+        "confidence": "Source-linked"
+      },
+      {
+        "title": "CBD vs THC",
+        "summary": "CBD is non-intoxicating; THC is the primary intoxicating compound subject to regulation.",
+        "confidence": "Needs Verification"
+      },
+      {
+        "title": "Industrial hemp",
+        "summary": "Hemp policies focus on fiber and low-THC products under separate rules.",
+        "confidence": "Source-linked"
+      }
+    ]
+  },
   "education": {
     "title": "Understand legal terminology",
     "subtitle": "Clear definitions to avoid ambiguity when comparing countries."
+  },
+  "culturalInsights": {
+    "title": "Culture and tourism insights",
+    "subtitle": "Local context and tourism policies, with verification labels.",
+    "items": [
+      {
+        "title": "Netherlands coffee shop culture",
+        "summary": "Tolerance policies are region-specific and distinct from full legalization.",
+        "confidence": "Region-specific"
+      },
+      {
+        "title": "Uruguay legalization model",
+        "summary": "National framework emphasizes regulated access and public health safeguards.",
+        "confidence": "Source-linked"
+      },
+      {
+        "title": "Portugal decriminalization",
+        "summary": "Public health focused reforms replace criminal penalties for possession.",
+        "confidence": "Source-linked"
+      },
+      {
+        "title": "Thailand policy shifts",
+        "summary": "Policy changes are evolving and require verification for tourism guidance.",
+        "confidence": "Needs Verification"
+      }
+    ]
   },
   "sources": {
     "title": "Sources and references",

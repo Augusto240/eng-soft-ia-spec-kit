@@ -20,3 +20,10 @@ export function getStatusCounts(countries: Country[]) {
     },
   );
 }
+
+export function getContinentCounts(countries: Country[]) {
+  return countries.reduce<Record<string, number>>((acc, country) => {
+    acc[country.continent] = (acc[country.continent] ?? 0) + 1;
+    return acc;
+  }, {});
+}

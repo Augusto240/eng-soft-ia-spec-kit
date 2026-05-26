@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useRef, useState } from 'react';
+import type { FocusEvent, MouseEvent } from 'react';
 
 import worldGeo from '@/data/world-geo.json';
 import type { Country, GeoCollection, GeoFeature } from '@/lib/data/types';
@@ -8,7 +9,7 @@ import { STATUS_LABELS, statusColorHex } from '@/lib/constants';
 import MapLegend from './MapLegend';
 import MapTooltip from './MapTooltip';
 
-const VIEWBOX = { width: 800, height: 420, padding: 8 };
+const VIEWBOX = { width: 800, height: 420 };
 
 type WorldMapProps = {
   countries: Country[];
@@ -61,7 +62,7 @@ export default function WorldMap({ countries, filteredCountries, isFiltered }: W
     }));
   }, [geo.features, hasGeo]);
 
-  const updateTooltipPosition = (event: React.MouseEvent | React.FocusEvent) => {
+  const updateTooltipPosition = (event: MouseEvent | FocusEvent) => {
     const rect = containerRef.current?.getBoundingClientRect();
     if (!rect) return;
     const clientX = 'clientX' in event ? event.clientX : rect.left + rect.width / 2;
@@ -72,10 +73,20 @@ export default function WorldMap({ countries, filteredCountries, isFiltered }: W
     });
   };
 
-  const handleActivate = (country: Country, event: React.MouseEvent | React.FocusEvent) => {
+  const handleActivate = (country: Country, event: MouseEvent | FocusEvent) => {
     setActiveCountry(country);
     updateTooltipPosition(event);
   };
+
+  if (countries.length === 0) {
+    return (
+      <div className="flex flex-col gap-4">
+        <div className="flex h-80 w-full items-center justify-center rounded-2xl border border-line/40 bg-surface/70 text-sm text-muted">
+          No geographic data available.
+        </div>
+      </div>
+    );
+  }
 
   if (!hasGeo) {
     return (
@@ -99,11 +110,13 @@ export default function WorldMap({ countries, filteredCountries, isFiltered }: W
     <div className="flex flex-col gap-4">
       <div
         ref={containerRef}
-        className="map-frame relative overflow-hidden rounded-2xl border border-line/40 bg-surface/60 p-4"
+        className="map-frame relative overflow-hidden rounded-3xl border border-line/40 bg-surface/60 p-4"
+        onMouseLeave={() => setActiveCountry(null)}
       >
         <svg
           viewBox={`0 0 ${VIEWBOX.width} ${VIEWBOX.height}`}
-          className="h-[420px] w-full"
+          className="h-[460px] w-full"
+          preserveAspectRatio="xMidYMid meet"
           role="img"
           aria-label="World map showing cannabis policy status by country"
         >
@@ -136,7 +149,6 @@ export default function WorldMap({ countries, filteredCountries, isFiltered }: W
                     if (!country) return;
                     handleActivate(country, event);
                   }}
-                  onMouseLeave={() => setActiveCountry(null)}
                   onFocus={(event) => {
                     if (!country) return;
                     handleActivate(country, event);

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import type { Country } from '@/lib/data/types';
 import FlagBadge from '@/components/ui/FlagBadge';
 import StatusBadge from '@/components/ui/StatusBadge';
+import ConfidenceBadge from '@/components/ui/ConfidenceBadge';
 
 type CountryCardProps = {
   country: Country;
@@ -18,6 +19,7 @@ export default function CountryCard({ country }: CountryCardProps) {
         </div>
         <StatusBadge status={country.status} />
       </div>
+      <p className="mt-2 text-xs uppercase tracking-[0.2em] text-muted">{country.policyModel}</p>
       <p className="mt-3 text-sm text-muted">{country.summary}</p>
       <div className="mt-4 flex flex-wrap gap-2">
         <FlagBadge label="Medical" enabled={country.medical} />
@@ -29,6 +31,7 @@ export default function CountryCard({ country }: CountryCardProps) {
         <p>Regulator: {country.regulatoryAgency ?? 'Not specified'}</p>
         <p>Last updated: {country.lastUpdated}</p>
         <p>Sources: {country.sources.map((source) => source.name).join(', ')}</p>
+        <ConfidenceBadge label={country.confidenceLabel} />
       </div>
       <Link
         href={`/countries/${country.code.toLowerCase()}`}

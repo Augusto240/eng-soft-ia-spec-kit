@@ -8,7 +8,8 @@
     "date": "2026-03-01",
     "sources": [
       { "name": "World Health Organization", "url": "https://www.who.int", "type": "international" }
-    ]
+    ],
+    "confidenceLabel": "Source-linked"
   },
   {
     "id": "highlight-2",
@@ -19,7 +20,8 @@
     "date": "2026-02-10",
     "sources": [
       { "name": "EMCDDA", "url": "https://www.emcdda.europa.eu", "type": "international" }
-    ]
+    ],
+    "confidenceLabel": "Source-linked"
   },
   {
     "id": "highlight-3",
@@ -34,6 +36,23 @@
         "url": "https://www.canada.ca/en/services/health/campaigns/cannabis.html",
         "type": "government"
       }
-    ]
+    ],
+    "confidenceLabel": "Source-linked"
+  },
+  {
+    "id": "highlight-4",
+    "title": "European legalization reforms",
+    "summary": "Reforms expand adult-use access under strict public health controls.",
+    "region": "Europe",
+    "status": "legalized",
+    "date": "2026-01-05",
+    "sources": [
+      {
+        "name": "Federal Ministry of Health",
+        "url": "https://www.bundesgesundheitsministerium.de",
+        "type": "government"
+      }
+    ],
+    "confidenceLabel": "Needs Verification"
   }
 ]

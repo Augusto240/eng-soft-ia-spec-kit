@@ -1,10 +1,17 @@
+'use client';
+
+import { motion, useReducedMotion } from 'framer-motion';
+
+import AnimatedNumber from '@/components/ui/AnimatedNumber';
+
 type HeroCopy = {
   title: string;
   subtitle: string;
   disclaimer: string;
   primaryCta: { label: string; href: string };
   secondaryCta: { label: string; href: string };
-  stats: { label: string; value: string }[];
+  stats: { label: string; value: number; suffix?: string }[];
+  trust: string[];
 };
 
 type HeroProps = {
@@ -12,10 +19,18 @@ type HeroProps = {
 };
 
 export default function Hero({ copy }: HeroProps) {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <section className="relative overflow-hidden rounded-3xl border border-line/40 bg-surface/80 px-8 py-16 shadow-soft">
       <div className="absolute inset-0 bg-hero-glow opacity-80" />
-      <div className="relative z-10 grid gap-10 lg:grid-cols-[1.2fr,0.8fr]">
+      <div className="absolute inset-0 hero-grid opacity-30" />
+      <motion.div
+        className="relative z-10 grid gap-10 lg:grid-cols-[1.2fr,0.8fr]"
+        initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+      >
         <div className="max-w-2xl">
           <p className="text-sm uppercase tracking-[0.35em] text-muted">Global policy education</p>
           <h1 className="mt-4 font-display text-4xl leading-tight md:text-6xl">{copy.title}</h1>
@@ -34,17 +49,27 @@ export default function Hero({ copy }: HeroProps) {
               {copy.secondaryCta.label}
             </a>
           </div>
+          <div className="mt-6 flex flex-wrap gap-3 text-xs text-muted">
+            {copy.trust.map((item) => (
+              <span key={item} className="rounded-full border border-line/60 px-3 py-1">
+                {item}
+              </span>
+            ))}
+          </div>
           <p className="mt-6 text-xs text-muted">{copy.disclaimer}</p>
         </div>
         <div className="grid gap-4">
           {copy.stats.map((item) => (
             <div key={item.label} className="rounded-2xl border border-line/40 bg-surface/70 p-6">
-              <p className="text-3xl font-display">{item.value}</p>
+              <p className="text-3xl font-display">
+                <AnimatedNumber value={item.value} />
+                {item.suffix ?? ''}
+              </p>
               <p className="mt-2 text-sm text-muted">{item.label}</p>
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

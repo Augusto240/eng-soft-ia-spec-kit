@@ -129,11 +129,29 @@
     },
     {
       "type": "Feature",
+      "id": "NL",
+      "properties": { "name": "Netherlands", "code": "NL", "kind": "country" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[3.1, 50.7], [7.3, 50.7], [7.3, 53.7], [3.1, 53.7], [3.1, 50.7]]]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "IL",
       "properties": { "name": "Israel", "code": "IL", "kind": "country" },
       "geometry": {
         "type": "Polygon",
         "coordinates": [[[34.2, 29.5], [35.9, 29.5], [35.9, 33.3], [34.2, 33.3], [34.2, 29.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "TH",
+      "properties": { "name": "Thailand", "code": "TH", "kind": "country" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[97, 5.5], [105.8, 5.5], [105.8, 20.5], [97, 20.5], [97, 5.5]]]
       }
     },
     {

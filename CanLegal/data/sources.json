@@ -1,32 +1,50 @@
 [
   {
     "name": "EMCDDA",
-    "url": "https://www.emcdda.europa.eu",
-    "type": "international"
+    "url": "https://www.emcdda.europa.eu/",
+    "type": "Research Organization",
+    "region": "Europe"
   },
   {
     "name": "World Health Organization",
-    "url": "https://www.who.int",
-    "type": "international"
+    "url": "https://www.who.int/",
+    "type": "Global Health Organization",
+    "region": "Global"
   },
   {
     "name": "UNODC",
-    "url": "https://www.unodc.org",
-    "type": "international"
+    "url": "https://www.unodc.org/",
+    "type": "United Nations",
+    "region": "Global"
   },
   {
     "name": "Government of Canada - Cannabis",
     "url": "https://www.canada.ca/en/services/health/campaigns/cannabis.html",
-    "type": "government"
+    "type": "Government",
+    "region": "Canada"
   },
   {
-    "name": "IRCCA",
-    "url": "https://www.gub.uy/ircca",
-    "type": "government"
+    "name": "German Federal Ministry of Health",
+    "url": "https://www.bundesgesundheitsministerium.de/en/",
+    "type": "Government",
+    "region": "Germany"
   },
   {
-    "name": "Federal Ministry of Health (Germany)",
-    "url": "https://www.bundesgesundheitsministerium.de",
-    "type": "government"
+    "name": "IRCCA Uruguay",
+    "url": "https://www.ircca.gub.uy/",
+    "type": "Government",
+    "region": "Uruguay"
+  },
+  {
+    "name": "SICAD Portugal",
+    "url": "https://www.sicad.pt/",
+    "type": "Government",
+    "region": "Portugal"
+  },
+  {
+    "name": "ANVISA",
+    "url": "https://www.gov.br/anvisa/",
+    "type": "Government",
+    "region": "Brazil"
   }
 ]

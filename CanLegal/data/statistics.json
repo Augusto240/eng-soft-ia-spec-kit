@@ -9,14 +9,14 @@
   {
     "id": "stat-medical",
     "label": "Medical access",
-    "value": 12,
+    "value": 14,
     "unit": "countries",
     "description": "Countries with regulated medical access in this dataset."
   },
   {
     "id": "stat-decrim",
     "label": "Decriminalization",
-    "value": 4,
+    "value": 7,
     "unit": "countries",
     "description": "Countries where possession is decriminalized."
   },
@@ -28,9 +28,16 @@
     "description": "Countries with adult-use access in this dataset."
   },
   {
+    "id": "stat-restricted",
+    "label": "Restricted or experimental",
+    "value": 3,
+    "unit": "countries",
+    "description": "Countries with restricted or experimental policy models."
+  },
+  {
     "id": "stat-sources",
     "label": "Official sources",
-    "value": 13,
+    "value": 15,
     "unit": "records",
     "description": "Country records linked to official sources for verification."
   }

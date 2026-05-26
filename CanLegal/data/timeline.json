@@ -129,6 +129,91 @@
     "verificationStatus": "needs-review"
   },
   {
+    "id": "il-medical",
+    "year": 2016,
+    "title": "Israel expands medical program",
+    "summary": "Medical program formalizes access under national health oversight.",
+    "status": "medical_only",
+    "region": "Asia",
+    "countryCodes": ["IL"],
+    "sources": [
+      {
+        "name": "Ministry of Health - Medical cannabis",
+        "url": "https://www.health.gov.il/English/Topics/Cannabis/MedicalCannabis",
+        "type": "government"
+      }
+    ],
+    "verificationStatus": "needs-review"
+  },
+  {
+    "id": "cz-2010",
+    "year": 2010,
+    "title": "Czech Republic adjusts possession policy",
+    "summary": "Administrative enforcement replaces criminal penalties for minor possession.",
+    "status": "decriminalized",
+    "region": "Europe",
+    "countryCodes": ["CZ"],
+    "sources": [
+      { "name": "SUKL", "url": "https://www.sukl.eu", "type": "government" }
+    ],
+    "verificationStatus": "needs-review"
+  },
+  {
+    "id": "mx-medical",
+    "year": 2017,
+    "title": "Mexico formalizes medical access",
+    "summary": "Medical access is recognized within a national regulatory framework.",
+    "status": "medical_only",
+    "region": "North America",
+    "countryCodes": ["MX"],
+    "sources": [
+      { "name": "Secretariat of Health", "url": "https://www.gob.mx/salud", "type": "government" }
+    ],
+    "verificationStatus": "needs-review"
+  },
+  {
+    "id": "nl-tolerance",
+    "year": 1976,
+    "title": "Netherlands adopts tolerance policy",
+    "summary": "Retail tolerance policies emerge while supply remains restricted.",
+    "status": "restricted",
+    "region": "Europe",
+    "countryCodes": ["NL"],
+    "sources": [
+      { "name": "Government of the Netherlands", "url": "https://www.government.nl", "type": "government" }
+    ],
+    "verificationStatus": "needs-review",
+    "confidenceLabel": "Region-specific"
+  },
+  {
+    "id": "th-policy",
+    "year": 2022,
+    "title": "Thailand policy changes reported",
+    "summary": "Policy changes are reported; verify current legal framework.",
+    "status": "restricted",
+    "region": "Asia",
+    "countryCodes": ["TH"],
+    "sources": [
+      { "name": "Ministry of Public Health", "url": "https://www.moph.go.th", "type": "government" }
+    ],
+    "verificationStatus": "needs-review",
+    "confidenceLabel": "Needs Verification"
+  },
+  {
+    "id": "br-stf-2024",
+    "year": 2024,
+    "title": "Brazil STF ruling reported",
+    "summary": "Reported decriminalization discussions require verification before publication.",
+    "status": "restricted",
+    "region": "South America",
+    "countryCodes": ["BR"],
+    "sources": [
+      { "name": "ANVISA", "url": "https://www.gov.br/anvisa", "type": "government" }
+    ],
+    "verificationStatus": "needs-review",
+    "confidenceLabel": "Needs Verification"
+  },
+  {
     "id": "za-2018",
     "year": 2018,
     "title": "South Africa decriminalizes private use",

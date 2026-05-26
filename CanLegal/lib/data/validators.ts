@@ -19,9 +19,20 @@ export function validateCountries(countries: Country[]) {
     assert(Boolean(country.continent), 'Country continent is required');
     assert(Boolean(country.region), 'Country region is required');
     assert(Boolean(country.status), 'Country status is required');
+    assert(Boolean(country.policyModel), 'Country policyModel is required');
     assert(Boolean(country.lastUpdated), 'Country lastUpdated is required');
     assert(Array.isArray(country.sources), 'Country sources must be an array');
+    assert(country.sources.length > 0, 'Country sources must not be empty');
     assert(Boolean(country.summary), 'Country summary is required');
+    assert(Boolean(country.medicalAccess), 'Country medicalAccess is required');
+    assert(Boolean(country.possessionRule), 'Country possessionRule is required');
+    assert(Boolean(country.cultivationRule), 'Country cultivationRule is required');
+    assert(Boolean(country.tourismPolicy), 'Country tourismPolicy is required');
+    assert(Array.isArray(country.tourismNotes), 'Country tourismNotes must be an array');
+    assert(Array.isArray(country.culturalNotes), 'Country culturalNotes must be an array');
+    assert(Array.isArray(country.countryFaq), 'Country countryFaq must be an array');
+    assert(Boolean(country.verificationStatus), 'Country verificationStatus is required');
+    assert(Boolean(country.confidenceLabel), 'Country confidenceLabel is required');
   });
 }
 

@@ -2,20 +2,65 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Country",
   "type": "object",
-  "required": ["code", "name", "continent", "status", "categories", "updatedAt", "sources"],
+  "required": [
+    "code",
+    "name",
+    "continent",
+    "region",
+    "status",
+    "policyModel",
+    "medical",
+    "recreational",
+    "decriminalized",
+    "industrialHemp",
+    "cultivationAllowed",
+    "possessionLimitGrams",
+    "minimumAge",
+    "yearOfLegalization",
+    "regulatoryAgency",
+    "sources",
+    "lastUpdated",
+    "summary",
+    "medicalAccess",
+    "possessionRule",
+    "cultivationRule",
+    "tourismPolicy",
+    "medicalNotes",
+    "restrictions",
+    "policyNotes",
+    "tourismNotes",
+    "culturalNotes",
+    "countryFaq",
+    "timelineEventIds",
+    "verificationStatus"
+    "confidenceLabel"
+  ],
   "properties": {
     "code": { "type": "string", "minLength": 2 },
     "name": { "type": "string" },
     "continent": { "type": "string" },
+    "region": { "type": "string" },
     "status": {
       "type": "string",
-      "enum": ["legalized", "decriminalized", "medical", "prohibited", "unknown"]
+      "enum": [
+        "legalized",
+        "medical_only",
+        "decriminalized",
+        "illegal",
+        "restricted",
+        "unknown"
+      ]
     },
-    "categories": {
-      "type": "array",
-      "items": { "type": "string" }
-    },
-    "updatedAt": { "type": "string" },
+    "policyModel": { "type": "string" },
+    "medical": { "type": "boolean" },
+    "recreational": { "type": "boolean" },
+    "decriminalized": { "type": "boolean" },
+    "industrialHemp": { "type": "boolean" },
+    "cultivationAllowed": { "type": "boolean" },
+    "possessionLimitGrams": { "type": ["number", "null"] },
+    "minimumAge": { "type": ["number", "null"] },
+    "yearOfLegalization": { "type": ["number", "null"] },
+    "regulatoryAgency": { "type": ["string", "null"] },
     "sources": {
       "type": "array",
       "items": {
@@ -23,14 +68,53 @@
         "required": ["name", "url"],
         "properties": {
           "name": { "type": "string" },
-          "url": { "type": "string" }
+          "url": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["government", "international", "regulator", "research", "other"]
+          }
         },
         "additionalProperties": false
       }
     },
-    "lat": { "type": "number" },
-    "lon": { "type": "number" },
-    "dataStatus": { "type": "string", "enum": ["sample", "verified"] }
+    "lastUpdated": { "type": "string" },
+    "summary": { "type": "string" },
+    "medicalAccess": { "type": "string" },
+    "possessionRule": { "type": "string" },
+    "cultivationRule": { "type": "string" },
+    "tourismPolicy": { "type": "string" },
+    "medicalNotes": { "type": "array", "items": { "type": "string" } },
+    "restrictions": { "type": "array", "items": { "type": "string" } },
+    "policyNotes": { "type": "array", "items": { "type": "string" } },
+    "tourismNotes": { "type": "array", "items": { "type": "string" } },
+    "culturalNotes": { "type": "array", "items": { "type": "string" } },
+    "countryFaq": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["question", "answer"],
+        "properties": {
+          "question": { "type": "string" },
+          "answer": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "timelineEventIds": { "type": "array", "items": { "type": "string" } },
+    "verificationStatus": {
+      "type": "string",
+      "enum": ["verified", "source-linked", "needs-review"]
+    },
+    "confidenceLabel": {
+      "type": "string",
+      "enum": [
+        "Verified",
+        "Source-linked",
+        "Needs Verification",
+        "Partial Information",
+        "Region-specific"
+      ]
+    }
   },
   "additionalProperties": false
 }

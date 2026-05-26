@@ -6,7 +6,7 @@
   "properties": {
     "status": {
       "type": "string",
-      "enum": ["legalized", "decriminalized", "medical", "prohibited"]
+      "enum": ["legalized", "medical_only", "decriminalized", "illegal", "restricted"]
     },
     "label": { "type": "string" },
     "definition": { "type": "string" }

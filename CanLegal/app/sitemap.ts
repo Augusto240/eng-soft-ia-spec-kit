@@ -11,7 +11,7 @@ export default function sitemap() {
     },
     ...countries.map((country) => ({
       url: `${baseUrl}/countries/${country.code.toLowerCase()}`,
-      lastModified: new Date(country.updatedAt),
+      lastModified: new Date(country.lastUpdated),
     })),
   ];
 }

@@ -8,6 +8,13 @@ export type LegalStatus =
 
 export type VerificationStatus = 'verified' | 'source-linked' | 'needs-review';
 
+export type ConfidenceLabel =
+  | 'Verified'
+  | 'Source-linked'
+  | 'Needs Verification'
+  | 'Partial Information'
+  | 'Region-specific';
+
 export type SourceRef = {
   name: string;
   url: string;
@@ -20,6 +27,7 @@ export type Country = {
   continent: string;
   region: string;
   status: LegalStatus;
+  policyModel: string;
   medical: boolean;
   recreational: boolean;
   decriminalized: boolean;
@@ -32,11 +40,19 @@ export type Country = {
   sources: SourceRef[];
   lastUpdated: string;
   summary: string;
+  medicalAccess: string;
+  possessionRule: string;
+  cultivationRule: string;
+  tourismPolicy: string;
   medicalNotes: string[];
   restrictions: string[];
   policyNotes: string[];
+  tourismNotes: string[];
+  culturalNotes: string[];
+  countryFaq: { question: string; answer: string }[];
   timelineEventIds: string[];
   verificationStatus: VerificationStatus;
+  confidenceLabel: ConfidenceLabel;
 };
 
 export type TimelineEvent = {
@@ -49,6 +65,7 @@ export type TimelineEvent = {
   countryCodes: string[];
   sources: SourceRef[];
   verificationStatus: VerificationStatus;
+  confidenceLabel?: ConfidenceLabel;
 };
 
 export type Statistic = {
@@ -67,6 +84,7 @@ export type Highlight = {
   status: LegalStatus;
   date: string;
   sources: SourceRef[];
+  confidenceLabel?: ConfidenceLabel;
 };
 
 export type GlossaryTerm = {

@@ -2,7 +2,17 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "TimelineEvent",
   "type": "object",
-  "required": ["id", "year", "title", "summary", "status", "region"],
+  "required": [
+    "id",
+    "year",
+    "title",
+    "summary",
+    "status",
+    "region",
+    "countryCodes",
+    "sources",
+    "verificationStatus"
+  ],
   "properties": {
     "id": { "type": "string" },
     "year": { "type": "number" },
@@ -10,9 +20,47 @@
     "summary": { "type": "string" },
     "status": {
       "type": "string",
-      "enum": ["legalized", "decriminalized", "medical", "prohibited", "unknown"]
+      "enum": [
+        "legalized",
+        "medical_only",
+        "decriminalized",
+        "illegal",
+        "restricted",
+        "unknown"
+      ]
     },
-    "region": { "type": "string" }
+    "region": { "type": "string" },
+    "countryCodes": { "type": "array", "items": { "type": "string" } },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "url"],
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["government", "international", "regulator", "research", "other"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "verificationStatus": {
+      "type": "string",
+      "enum": ["verified", "source-linked", "needs-review"]
+    },
+    "confidenceLabel": {
+      "type": "string",
+      "enum": [
+        "Verified",
+        "Source-linked",
+        "Needs Verification",
+        "Partial Information",
+        "Region-specific"
+      ]
+    }
   },
   "additionalProperties": false
 }

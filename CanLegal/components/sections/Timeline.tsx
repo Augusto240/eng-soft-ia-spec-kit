@@ -1,13 +1,6 @@
+import ConfidenceBadge from '@/components/ui/ConfidenceBadge';
+import StatusBadge from '@/components/ui/StatusBadge';
 import type { TimelineEvent } from '@/lib/data/types';
-import { statusChipClass } from '@/lib/constants';
-
-const statusLabels: Record<string, string> = {
-  legalized: 'Legalized',
-  decriminalized: 'Decriminalized',
-  medical: 'Medical',
-  prohibited: 'Prohibited',
-  unknown: 'Unknown',
-};
 
 type TimelineCopy = {
   title: string;
@@ -32,13 +25,19 @@ export default function Timeline({ events, copy }: TimelineProps) {
           <li key={event.id} className="rounded-2xl border border-line/40 bg-surface/70 p-5">
             <div className="flex items-center justify-between">
               <span className="text-sm text-muted">{event.year}</span>
-              <span className={`rounded-full px-3 py-1 text-xs font-semibold ${statusChipClass(event.status)}`}>
-                {statusLabels[event.status] ?? 'Unknown'}
-              </span>
+              <StatusBadge status={event.status} />
             </div>
             <h3 className="mt-4 text-lg font-semibold">{event.title}</h3>
             <p className="mt-2 text-sm text-muted">{event.summary}</p>
             <p className="mt-4 text-xs text-muted">Region: {event.region}</p>
+            <p className="mt-2 text-xs text-muted">
+              Sources: {event.sources.map((source) => source.name).join(', ')}
+            </p>
+            {event.confidenceLabel ? (
+              <div className="mt-3">
+                <ConfidenceBadge label={event.confidenceLabel} />
+              </div>
+            ) : null}
           </li>
         ))}
       </ol>

@@ -5,6 +5,7 @@
     "continent": "North America",
     "region": "Northern America",
     "status": "legalized",
+    "policyModel": "Legalization",
     "medical": true,
     "recreational": true,
     "decriminalized": false,
@@ -21,13 +22,30 @@
         "type": "government"
       }
     ],
-    "lastUpdated": "2026-05-20",
+    "lastUpdated": "2026-05-26",
     "summary": "Federal framework allows regulated medical and adult-use cannabis with provincial oversight.",
+    "medicalAccess": "Prescription-based medical access with provincial delivery models.",
+    "possessionRule": "Provincial limits apply; verify local guidance before use.",
+    "cultivationRule": "Home cultivation allowed with limits; verify provincial rules.",
+    "tourismPolicy": "Tourism is subject to national law; local rules apply.",
     "medicalNotes": ["Medical access is regulated federally with provincial delivery."],
     "restrictions": ["Retail and possession rules vary by province and territory."],
     "policyNotes": ["Verify age limits and possession thresholds per province."],
+    "tourismNotes": ["Tourism is not promoted by policy; follow local rules."],
+    "culturalNotes": ["Public health messaging emphasizes responsible use and safety."],
+    "countryFaq": [
+      {
+        "question": "Is adult use legal nationwide?",
+        "answer": "Yes, under federal law with provincial controls. Verify local rules."
+      },
+      {
+        "question": "Where can I verify current rules?",
+        "answer": "Use official federal and provincial government sources."
+      }
+    ],
     "timelineEventIds": ["ca-2018"],
-    "verificationStatus": "source-linked"
+    "verificationStatus": "source-linked",
+    "confidenceLabel": "Source-linked"
   },
   {
     "code": "UY",
@@ -35,6 +53,7 @@
     "continent": "South America",
     "region": "South America",
     "status": "legalized",
+    "policyModel": "Legalization",
     "medical": true,
     "recreational": true,
     "decriminalized": false,
@@ -47,13 +66,30 @@
     "sources": [
       { "name": "IRCCA", "url": "https://www.gub.uy/ircca", "type": "government" }
     ],
-    "lastUpdated": "2026-05-20",
+    "lastUpdated": "2026-05-26",
     "summary": "National framework allows regulated adult-use access and medical programs.",
+    "medicalAccess": "Medical access is regulated nationally with controlled distribution.",
+    "possessionRule": "Limits vary by regulatory channel; verify official guidance.",
+    "cultivationRule": "Home cultivation permitted under national rules; verify conditions.",
+    "tourismPolicy": "Tourism access is restricted; verify residency requirements.",
     "medicalNotes": [],
     "restrictions": ["Access depends on national regulatory pathways."],
     "policyNotes": ["Verify purchase limits and registration requirements."],
+    "tourismNotes": ["Policies may restrict access to residents; verify official rules."],
+    "culturalNotes": ["Public policy emphasizes regulation and harm reduction."],
+    "countryFaq": [
+      {
+        "question": "Is adult use legal?",
+        "answer": "Yes, within regulated programs. Verify access rules."
+      },
+      {
+        "question": "Can visitors access legal products?",
+        "answer": "Rules can restrict access to residents. Verify with IRCCA."
+      }
+    ],
     "timelineEventIds": ["uy-2013"],
-    "verificationStatus": "source-linked"
+    "verificationStatus": "source-linked",
+    "confidenceLabel": "Source-linked"
   },
   {
     "code": "DE",
@@ -61,6 +97,7 @@
     "continent": "Europe",
     "region": "Western Europe",
     "status": "legalized",
+    "policyModel": "Legalization reforms",
     "medical": true,
     "recreational": true,
     "decriminalized": false,
@@ -77,13 +114,30 @@
         "type": "government"
       }
     ],
-    "lastUpdated": "2026-05-20",
-    "summary": "National framework introduces adult-use access with strict controls alongside medical programs.",
+    "lastUpdated": "2026-05-26",
+    "summary": "Adult-use reforms introduce regulated access alongside established medical programs.",
+    "medicalAccess": "Medical access remains regulated through prescription programs.",
+    "possessionRule": "Thresholds and rollout details are evolving; verify official guidance.",
+    "cultivationRule": "Home cultivation permitted with limits; verify current rules.",
+    "tourismPolicy": "Tourism access is subject to national law; verify local enforcement.",
     "medicalNotes": ["Medical access remains regulated through prescription programs."],
     "restrictions": ["Adult-use supply channels remain regulated and limited."],
-    "policyNotes": ["Verify phased rollout and local access rules."],
+    "policyNotes": ["Reforms are phased; confirm current scope."],
+    "tourismNotes": ["Tourism access varies by enforcement and local guidance."],
+    "culturalNotes": ["Public debate emphasizes health, regulation, and youth protection."],
+    "countryFaq": [
+      {
+        "question": "Is adult use fully legal?",
+        "answer": "Reforms are active but still evolving. Verify current scope."
+      },
+      {
+        "question": "Where to verify details?",
+        "answer": "Use the Federal Ministry of Health and official announcements."
+      }
+    ],
     "timelineEventIds": ["de-2024"],
-    "verificationStatus": "source-linked"
+    "verificationStatus": "needs-review",
+    "confidenceLabel": "Needs Verification"
   },
   {
     "code": "MT",
@@ -91,6 +145,7 @@
     "continent": "Europe",
     "region": "Southern Europe",
     "status": "legalized",
+    "policyModel": "Legalization",
     "medical": true,
     "recreational": true,
     "decriminalized": false,
@@ -103,13 +158,30 @@
     "sources": [
       { "name": "Government of Malta", "url": "https://www.gov.mt", "type": "government" }
     ],
-    "lastUpdated": "2026-05-20",
-    "summary": "Adult-use legalization with regulated non-profit associations and home cultivation.",
+    "lastUpdated": "2026-05-26",
+    "summary": "Adult-use legalization allows regulated access and home cultivation with limits.",
+    "medicalAccess": "Medical access is regulated under national rules.",
+    "possessionRule": "Limits apply; verify official guidance before publication.",
+    "cultivationRule": "Home cultivation allowed under conditions; verify limits.",
+    "tourismPolicy": "Tourism access is subject to local law and association rules.",
     "medicalNotes": [],
     "restrictions": ["Commercial sales are limited; membership-based access only."],
     "policyNotes": ["Verify association rules and possession limits."],
+    "tourismNotes": ["Tourism access depends on local rules and membership pathways."],
+    "culturalNotes": ["Policy emphasizes harm reduction and public health oversight."],
+    "countryFaq": [
+      {
+        "question": "Is adult use legal?",
+        "answer": "Yes, under regulated association models. Verify current rules."
+      },
+      {
+        "question": "Where can I verify details?",
+        "answer": "Use official Maltese government sources."
+      }
+    ],
     "timelineEventIds": ["mt-2021"],
-    "verificationStatus": "source-linked"
+    "verificationStatus": "needs-review",
+    "confidenceLabel": "Needs Verification"
   },
   {
     "code": "LU",
@@ -117,6 +189,7 @@
     "continent": "Europe",
     "region": "Western Europe",
     "status": "restricted",
+    "policyModel": "Restricted / experimental",
     "medical": true,
     "recreational": true,
     "decriminalized": true,
@@ -133,13 +206,74 @@
         "type": "government"
       }
     ],
-    "lastUpdated": "2026-05-20",
+    "lastUpdated": "2026-05-26",
     "summary": "Adult possession and home cultivation are permitted with significant restrictions.",
+    "medicalAccess": "Medical access is regulated nationally; verify current rules.",
+    "possessionRule": "Thresholds vary; verify official guidance.",
+    "cultivationRule": "Home cultivation allowed under limits; verify details.",
+    "tourismPolicy": "Tourism access is limited and subject to local enforcement.",
     "medicalNotes": [],
     "restrictions": ["Commercial sales remain limited or restricted."],
     "policyNotes": ["Verify thresholds and enforcement guidance."],
+    "tourismNotes": ["Tourism access remains limited; verify official updates."],
+    "culturalNotes": ["Policy reforms focus on harm reduction and public health."],
+    "countryFaq": [
+      {
+        "question": "Is adult use fully legal?",
+        "answer": "Policy is restricted and evolving. Verify current rules."
+      },
+      {
+        "question": "Where can I verify official rules?",
+        "answer": "Use official Luxembourg government sources."
+      }
+    ],
     "timelineEventIds": ["lu-2023"],
-    "verificationStatus": "source-linked"
+    "verificationStatus": "needs-review",
+    "confidenceLabel": "Partial Information"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "status": "restricted",
+    "policyModel": "Tolerated retail with restricted supply",
+    "medical": true,
+    "recreational": false,
+    "decriminalized": true,
+    "industrialHemp": true,
+    "cultivationAllowed": false,
+    "possessionLimitGrams": null,
+    "minimumAge": null,
+    "yearOfLegalization": null,
+    "regulatoryAgency": "Government of the Netherlands",
+    "sources": [
+      { "name": "Government of the Netherlands", "url": "https://www.government.nl", "type": "government" }
+    ],
+    "lastUpdated": "2026-05-26",
+    "summary": "Retail tolerance policies coexist with restrictive supply rules.",
+    "medicalAccess": "Medical access is regulated through prescription programs.",
+    "possessionRule": "Tolerance policies vary by municipality; verify local rules.",
+    "cultivationRule": "Cultivation remains restricted; verify official guidance.",
+    "tourismPolicy": "Tourism tolerance is region-specific; verify local guidance.",
+    "medicalNotes": ["Medical access is regulated separately from retail tolerance."],
+    "restrictions": ["Supply chain remains regulated and restricted."],
+    "policyNotes": ["Coffee shop policies vary by municipality."],
+    "tourismNotes": ["Tourism access varies by region and local enforcement."],
+    "culturalNotes": ["Coffee shop culture is a tolerance policy, not full legalization."],
+    "countryFaq": [
+      {
+        "question": "Is cannabis fully legal?",
+        "answer": "No. Retail tolerance policies exist with restricted supply."
+      },
+      {
+        "question": "Can tourists access coffee shops?",
+        "answer": "Rules are region-specific. Verify local policy."
+      }
+    ],
+    "timelineEventIds": ["nl-tolerance"],
+    "verificationStatus": "needs-review",
+    "confidenceLabel": "Region-specific"
   },
   {
     "code": "AU",
@@ -147,6 +281,7 @@
     "continent": "Oceania",
     "region": "Australia and New Zealand",
     "status": "medical_only",
+    "policyModel": "Medical authorization",
     "medical": true,
     "recreational": false,
     "decriminalized": false,
@@ -163,13 +298,30 @@
         "type": "government"
       }
     ],
-    "lastUpdated": "2026-05-20",
+    "lastUpdated": "2026-05-26",
     "summary": "Medical access is permitted through regulated prescription programs.",
+    "medicalAccess": "Regulated prescription access with national oversight.",
+    "possessionRule": "Possession rules vary by state; verify local guidance.",
+    "cultivationRule": "Cultivation is licensed and regulated; verify program rules.",
+    "tourismPolicy": "Tourism access is not promoted; national law applies to visitors.",
     "medicalNotes": ["Access pathways vary by state and clinical program."],
     "restrictions": ["Adult-use remains illegal at national level."],
     "policyNotes": ["Verify state-level programs and approvals."],
+    "tourismNotes": ["Tourism access is not a policy objective."],
+    "culturalNotes": ["Medical policy focuses on clinical oversight."],
+    "countryFaq": [
+      {
+        "question": "Is adult use legal?",
+        "answer": "No. Adult use remains illegal nationally."
+      },
+      {
+        "question": "How is medical access regulated?",
+        "answer": "Through prescription pathways overseen by the TGA."
+      }
+    ],
     "timelineEventIds": ["au-medical"],
-    "verificationStatus": "source-linked"
+    "verificationStatus": "source-linked",
+    "confidenceLabel": "Source-linked"
   },
   {
     "code": "BR",
@@ -177,6 +329,7 @@
     "continent": "South America",
     "region": "South America",
     "status": "medical_only",
+    "policyModel": "Medical authorization",
     "medical": true,
     "recreational": false,
     "decriminalized": false,
@@ -189,13 +342,30 @@
     "sources": [
       { "name": "ANVISA", "url": "https://www.gov.br/anvisa", "type": "government" }
     ],
-    "lastUpdated": "2026-05-20",
-    "summary": "Medical access is permitted under regulated import and prescription pathways.",
-    "medicalNotes": [],
+    "lastUpdated": "2026-05-26",
+    "summary": "Medical access exists under regulated authorization and import pathways.",
+    "medicalAccess": "Authorization and import pathways regulated by ANVISA.",
+    "possessionRule": "Reported debates around thresholds; verify official rulings.",
+    "cultivationRule": "Personal cultivation remains restricted; verify current guidance.",
+    "tourismPolicy": "Tourism access is not promoted; national law applies to visitors.",
+    "medicalNotes": ["Medical access has expanded through authorization programs."],
     "restrictions": ["Adult-use remains illegal at national level."],
-    "policyNotes": ["Verify domestic cultivation rules and import pathways."],
-    "timelineEventIds": ["br-medical"],
-    "verificationStatus": "source-linked"
+    "policyNotes": ["Reported STF 2024 ruling discussions require verification."],
+    "tourismNotes": ["Tourism access is not a policy objective."],
+    "culturalNotes": ["Public debate emphasizes health access and judicial review."],
+    "countryFaq": [
+      {
+        "question": "Is adult use legal?",
+        "answer": "No. Adult use remains illegal under national law."
+      },
+      {
+        "question": "Are there court rulings on possession?",
+        "answer": "Reported rulings require verification before publication."
+      }
+    ],
+    "timelineEventIds": ["br-medical", "br-stf-2024"],
+    "verificationStatus": "needs-review",
+    "confidenceLabel": "Needs Verification"
   },
   {
     "code": "GB",
@@ -203,6 +373,7 @@
     "continent": "Europe",
     "region": "Northern Europe",
     "status": "medical_only",
+    "policyModel": "Medical authorization",
     "medical": true,
     "recreational": false,
     "decriminalized": false,
@@ -219,13 +390,30 @@
         "type": "government"
       }
     ],
-    "lastUpdated": "2026-05-20",
-    "summary": "Medical access is limited to prescription pathways with strict oversight.",
+    "lastUpdated": "2026-05-26",
+    "summary": "Medical access is limited to specialist prescription pathways.",
+    "medicalAccess": "Specialist prescriptions and limited access programs.",
+    "possessionRule": "Adult-use possession remains illegal; verify enforcement policy.",
+    "cultivationRule": "Cultivation remains illegal without license.",
+    "tourismPolicy": "Tourism access is not promoted; national law applies to visitors.",
     "medicalNotes": [],
     "restrictions": ["Adult-use remains illegal at national level."],
     "policyNotes": ["Verify prescribing guidance and access routes."],
+    "tourismNotes": ["Tourism access is not part of national policy."],
+    "culturalNotes": ["Public health guidance emphasizes controlled access."],
+    "countryFaq": [
+      {
+        "question": "Is adult use legal?",
+        "answer": "No. Adult use remains illegal."
+      },
+      {
+        "question": "How is medical access approved?",
+        "answer": "Through specialist prescribing pathways."
+      }
+    ],
     "timelineEventIds": ["gb-medical"],
-    "verificationStatus": "source-linked"
+    "verificationStatus": "source-linked",
+    "confidenceLabel": "Source-linked"
   },
   {
     "code": "IL",
@@ -233,6 +421,7 @@
     "continent": "Asia",
     "region": "Western Asia",
     "status": "medical_only",
+    "policyModel": "Medical authorization",
     "medical": true,
     "recreational": false,
     "decriminalized": false,
@@ -249,13 +438,30 @@
         "type": "government"
       }
     ],
-    "lastUpdated": "2026-05-20",
+    "lastUpdated": "2026-05-26",
     "summary": "Medical cannabis is regulated through national health programs.",
+    "medicalAccess": "National medical program with regulated licensing.",
+    "possessionRule": "Adult-use possession remains illegal; verify enforcement policy.",
+    "cultivationRule": "Cultivation is regulated through licensed programs.",
+    "tourismPolicy": "Tourism access is not promoted; national law applies to visitors.",
     "medicalNotes": [],
     "restrictions": ["Adult-use remains illegal at national level."],
     "policyNotes": ["Verify licensing and patient access criteria."],
+    "tourismNotes": ["Tourism access is not a policy objective."],
+    "culturalNotes": ["Policy emphasizes regulated medical access and patient safety."],
+    "countryFaq": [
+      {
+        "question": "Is adult use legal?",
+        "answer": "No. Adult use remains illegal."
+      },
+      {
+        "question": "How is medical access regulated?",
+        "answer": "Through licensed medical programs and approvals."
+      }
+    ],
     "timelineEventIds": ["il-medical"],
-    "verificationStatus": "source-linked"
+    "verificationStatus": "source-linked",
+    "confidenceLabel": "Source-linked"
   },
   {
     "code": "PT",
@@ -263,6 +469,7 @@
     "continent": "Europe",
     "region": "Southern Europe",
     "status": "decriminalized",
+    "policyModel": "Decriminalization",
     "medical": true,
     "recreational": false,
     "decriminalized": true,
@@ -275,13 +482,30 @@
     "sources": [
       { "name": "INFARMED", "url": "https://www.infarmed.pt", "type": "government" }
     ],
-    "lastUpdated": "2026-05-20",
+    "lastUpdated": "2026-05-26",
     "summary": "Possession is decriminalized and medical access is regulated.",
+    "medicalAccess": "Medical access regulated through prescription programs.",
+    "possessionRule": "Administrative responses apply; verify thresholds.",
+    "cultivationRule": "Cultivation remains restricted; verify current rules.",
+    "tourismPolicy": "Tourism access is not promoted; national law applies to visitors.",
     "medicalNotes": [],
     "restrictions": ["Adult-use sales remain illegal."],
     "policyNotes": ["Verify thresholds for administrative responses."],
+    "tourismNotes": ["Tourism access is not a policy objective."],
+    "culturalNotes": ["Policy emphasizes public health and harm reduction."],
+    "countryFaq": [
+      {
+        "question": "Is adult use legal?",
+        "answer": "No. Possession is decriminalized but sales remain illegal."
+      },
+      {
+        "question": "How is medical access regulated?",
+        "answer": "Through prescription programs overseen by INFARMED."
+      }
+    ],
     "timelineEventIds": ["pt-2001"],
-    "verificationStatus": "source-linked"
+    "verificationStatus": "source-linked",
+    "confidenceLabel": "Source-linked"
   },
   {
     "code": "CZ",
@@ -289,6 +513,7 @@
     "continent": "Europe",
     "region": "Central Europe",
     "status": "decriminalized",
+    "policyModel": "Decriminalization",
     "medical": true,
     "recreational": false,
     "decriminalized": true,
@@ -301,13 +526,30 @@
     "sources": [
       { "name": "SUKL", "url": "https://www.sukl.eu", "type": "government" }
     ],
-    "lastUpdated": "2026-05-20",
+    "lastUpdated": "2026-05-26",
     "summary": "Possession is decriminalized and medical access is regulated.",
+    "medicalAccess": "Medical access is regulated through prescription programs.",
+    "possessionRule": "Administrative penalties apply; verify thresholds.",
+    "cultivationRule": "Cultivation remains restricted; verify current rules.",
+    "tourismPolicy": "Tourism access is not promoted; national law applies to visitors.",
     "medicalNotes": [],
     "restrictions": ["Adult-use sales remain illegal."],
     "policyNotes": ["Verify limits and administrative penalties."],
+    "tourismNotes": ["Tourism access is not a policy objective."],
+    "culturalNotes": ["Policy balances public health and enforcement reform."],
+    "countryFaq": [
+      {
+        "question": "Is adult use legal?",
+        "answer": "No. Possession is decriminalized but sales remain illegal."
+      },
+      {
+        "question": "Where can I verify rules?",
+        "answer": "Use official public health and regulatory sources."
+      }
+    ],
     "timelineEventIds": ["cz-2010"],
-    "verificationStatus": "source-linked"
+    "verificationStatus": "needs-review",
+    "confidenceLabel": "Needs Verification"
   },
   {
     "code": "MX",
@@ -315,6 +557,7 @@
     "continent": "North America",
     "region": "Central America",
     "status": "decriminalized",
+    "policyModel": "Decriminalization",
     "medical": true,
     "recreational": false,
     "decriminalized": true,
@@ -327,13 +570,30 @@
     "sources": [
       { "name": "Secretariat of Health", "url": "https://www.gob.mx/salud", "type": "government" }
     ],
-    "lastUpdated": "2026-05-20",
-    "summary": "Decriminalization and medical access are present within a regulated framework.",
+    "lastUpdated": "2026-05-26",
+    "summary": "Decriminalization and medical access exist within a regulated framework.",
+    "medicalAccess": "Medical access is regulated through national health authorities.",
+    "possessionRule": "Administrative thresholds apply; verify official updates.",
+    "cultivationRule": "Cultivation remains restricted; verify current rules.",
+    "tourismPolicy": "Tourism access is not promoted; national law applies to visitors.",
     "medicalNotes": [],
     "restrictions": ["Adult-use sales remain illegal."],
     "policyNotes": ["Verify limits and regulatory updates."],
+    "tourismNotes": ["Tourism access is not a policy objective."],
+    "culturalNotes": ["Policy debates continue around access and public health."],
+    "countryFaq": [
+      {
+        "question": "Is adult use legal?",
+        "answer": "No. Possession is decriminalized but sales remain illegal."
+      },
+      {
+        "question": "How is medical access regulated?",
+        "answer": "Through national health authority programs." 
+      }
+    ],
     "timelineEventIds": ["mx-medical"],
-    "verificationStatus": "source-linked"
+    "verificationStatus": "needs-review",
+    "confidenceLabel": "Needs Verification"
   },
   {
     "code": "ZA",
@@ -341,6 +601,7 @@
     "continent": "Africa",
     "region": "Southern Africa",
     "status": "decriminalized",
+    "policyModel": "Decriminalization",
     "medical": false,
     "recreational": false,
     "decriminalized": true,
@@ -353,12 +614,73 @@
     "sources": [
       { "name": "South African Department of Health", "url": "https://www.health.gov.za", "type": "government" }
     ],
-    "lastUpdated": "2026-05-20",
+    "lastUpdated": "2026-05-26",
     "summary": "Private possession has been decriminalized with ongoing regulatory updates.",
+    "medicalAccess": "Medical access is limited and requires verification.",
+    "possessionRule": "Private use policies are evolving; verify official guidance.",
+    "cultivationRule": "Private cultivation allowed under court decisions; verify limits.",
+    "tourismPolicy": "Tourism access is not promoted; national law applies to visitors.",
     "medicalNotes": [],
     "restrictions": ["Commercial sales remain restricted."],
     "policyNotes": ["Verify current regulations and public guidance."],
+    "tourismNotes": ["Tourism access is not a policy objective."],
+    "culturalNotes": ["Legal shifts emphasize privacy and constitutional rights."],
+    "countryFaq": [
+      {
+        "question": "Is adult use legal?",
+        "answer": "Private use has been decriminalized, but sales remain illegal."
+      },
+      {
+        "question": "Are rules finalized?",
+        "answer": "Policies are evolving; verify official updates."
+      }
+    ],
     "timelineEventIds": ["za-2018"],
-    "verificationStatus": "source-linked"
+    "verificationStatus": "needs-review",
+    "confidenceLabel": "Needs Verification"
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "continent": "Asia",
+    "region": "South-Eastern Asia",
+    "status": "restricted",
+    "policyModel": "Restricted / experimental",
+    "medical": true,
+    "recreational": false,
+    "decriminalized": true,
+    "industrialHemp": true,
+    "cultivationAllowed": true,
+    "possessionLimitGrams": null,
+    "minimumAge": null,
+    "yearOfLegalization": null,
+    "regulatoryAgency": "Ministry of Public Health",
+    "sources": [
+      { "name": "Ministry of Public Health", "url": "https://www.moph.go.th", "type": "government" }
+    ],
+    "lastUpdated": "2026-05-26",
+    "summary": "Policy environment is evolving with medical access and restrictions.",
+    "medicalAccess": "Medical access is permitted within regulated programs.",
+    "possessionRule": "Policies are evolving; verify official guidance.",
+    "cultivationRule": "Cultivation rules are evolving; verify licensing requirements.",
+    "tourismPolicy": "Tourism access is not promoted; verify current guidance.",
+    "medicalNotes": [],
+    "restrictions": ["Policies are in transition; verify current rules."],
+    "policyNotes": ["Recent policy updates require verification."],
+    "tourismNotes": ["Tourism narratives should be avoided without verified data."],
+    "culturalNotes": ["Policy changes are subject to ongoing review."],
+    "countryFaq": [
+      {
+        "question": "Is adult use legal?",
+        "answer": "Policies are evolving; verify official guidance."
+      },
+      {
+        "question": "Is medical access available?",
+        "answer": "Medical programs exist, but rules are evolving. Verify official sources."
+      }
+    ],
+    "timelineEventIds": ["th-policy"],
+    "verificationStatus": "needs-review",
+    "confidenceLabel": "Needs Verification"
   }
 ]

@@ -46,14 +46,23 @@ export default function RootLayout({
               <a className="hover:text-ink" href="#highlights">
                 Highlights
               </a>
+              <a className="hover:text-ink" href="#featured">
+                Featured
+              </a>
               <a className="hover:text-ink" href="#stats">
                 Data
               </a>
               <a className="hover:text-ink" href="#timeline">
                 Timeline
               </a>
+              <a className="hover:text-ink" href="#medical">
+                Medical
+              </a>
               <a className="hover:text-ink" href="#education">
                 Concepts
+              </a>
+              <a className="hover:text-ink" href="#culture">
+                Culture
               </a>
               <a className="hover:text-ink" href="#sources">
                 Sources

@@ -6,7 +6,23 @@
   "properties": {
     "id": { "type": "string" },
     "term": { "type": "string" },
-    "definition": { "type": "string" }
+    "definition": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "url"],
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["government", "international", "regulator", "research", "other"]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
   },
   "additionalProperties": false
 }

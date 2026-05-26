@@ -12,7 +12,7 @@ Build a premium educational landing page and interactive information platform ab
 
 **Language/Version**: TypeScript 5.x, Node.js 20 LTS
 
-**Primary Dependencies**: Next.js (App Router), React 18, Tailwind CSS, Framer Motion, shadcn/ui, Leaflet (map), Recharts (charts)
+**Primary Dependencies**: Next.js (App Router), React 18, Tailwind CSS, Framer Motion, shadcn/ui, local SVG/GeoJSON map rendering, Recharts (charts)
 
 **Storage**: Static JSON datasets in repo
 
@@ -119,7 +119,7 @@ public/
 - **Routing**: Landing page at `/`, optional country detail pages at `/countries/[code]` for SEO and deep links.
 - **State Management**: Local component state + URL search params for filters and search, enabling shareable URLs without global stores.
 - **Data Loading**: Static JSON loaded at build time, validated against lightweight schemas, with versioned metadata.
-- **Map Strategy**: Leaflet via dynamic import to avoid SSR issues; render a simplified fallback list when JS is unavailable.
+- **Map Strategy**: Self-contained SVG/GeoJSON choropleth with hover/focus tooltips and a list fallback when geo data is unavailable.
 - **Charts**: Recharts with accessible labels, legends, and text alternatives.
 - **Animations**: Framer Motion with reduced motion support; use section-level transitions and staggered reveals only where they add clarity.
 - **Theming**: Tailwind + CSS variables for light/dark themes; ensure contrast parity and tokenized colors.
